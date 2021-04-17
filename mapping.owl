@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q921">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ZuZhiJiGou"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q1159">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/XingXing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q948">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/HeiSeJinShuKuang"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q653">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/QiHouDai"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q827">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/XingZhengCun"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q1023">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ZiRanJingGuan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q726">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ZiRanBaoHuQu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q799">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ShengJiXingZhengQu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q209">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ShuiYu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q1026">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/QiHouQiXiangJingGuan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q1174">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/WeiXing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q817">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ZiZhiQi"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q1158">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/HengXing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q958">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/FeiJinShuKuang"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q557">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ShanMai"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q822">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/SuMu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q345">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ShuiKu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q899">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/JiChang"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q516">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ShanFeng"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q911">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/FaDianZhan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q470">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/HaiTan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q5">
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Place"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/ckgg/1.0/ontology/properties/P177">
+    <owl:equivalentProperty rdf:resource="http://dbpedia.org/ontology/populationTotal"/>
+    <owl:equivalentProperty rdf:resource="http://www.geonames.org/ontology#population"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/ckgg/1.0/ontology/properties/P23">
+    <owl:equivalentProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q924">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/JiGuan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q807">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/DiJiShi"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q809">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ZiZhiZhou"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q1028">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ShengWuJingGuan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q801">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/Sheng"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q808">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/Meng"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q1025">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/DiZhiDiMaoJingGuan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q387">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/Yang"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q575">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/PenDi"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q1029">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/RenWenJingGuan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q388">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/Quan"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/ckgg/1.0/ontology/properties/P21">
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q622">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ShaMo"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q468">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/HuoShan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q810">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/XianJiXingZhengQu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q848">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/DaZhou"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q432">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/BanDao"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q348">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/HaiYang"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q455">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/XiaGu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q381">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/Hai"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q787">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/XingZhengQuHua"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q802">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ZiZhiQu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q825">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/JiCengQunZhongXingZiZhiQuYu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q907">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ShuiLiSheShi"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/ckgg/1.0/ontology/properties/P22">
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q812">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/Qi"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q903">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/SuiDao"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q922">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/QiYe"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q885">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/GongLu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q892">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/TieLu"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/ckgg/1.0/ontology/properties/P24">
+    <owl:equivalentProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q805">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/DiJiXingZhengQu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q606">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/SenLin"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q425">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/QunDao"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q811">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/LinQu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q353">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/HaiWan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q813">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ShiXiaQu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q816">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/XianJiShi"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q461">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/PingYuan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q329">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/HuPo"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q819">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/XiangJiXingZhengQu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q820">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/JieDao"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q898">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/QiCheZhan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q900">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/HuoCheZhan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q1014">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/GuJiJingGuan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q824">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/Zhen"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q880">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/GangKou"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q1143">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/XingTi"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q814">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/TeQu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q564">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/QiuLing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q631">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ShiDi"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q818">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ZiZhiXian"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q821">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/MinZuXiang"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q943">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/HuaShiRanLiaoKuang"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q803">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ZhiXiaShi"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q390">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/PuBu"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/ckgg/1.0/ontology/properties/P2">
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q826">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/SheQu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q211">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/HeLiu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q763">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/GuoJia"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q815">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/Xian"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q939">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/KuangChang"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q260">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/YunHe"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q920">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/BoWuGuan"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/ckgg/1.0/ontology/properties/P4">
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q947">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/JinShuKuang"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q1027">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/ShuiWenJingGuan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q806">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/DiQu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q823">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/Xiang"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q418">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/Dao"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q86">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/QiHouLeiXing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q419">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/Jiao"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q952">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/YouSeJinShuKuang"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q904">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/Qiao"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q890">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/JieQuLu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q498">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/GaoYuan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q804">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/TeBieXingZhengQu"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/ckgg/1.0/ontology/properties/P20">
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q1015">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/JingGuanJingDian"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/ckgg/1.0/ontology/properties/P3">
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://w3id.org/ckgg/1.0/ontology/classes/Q910">
+    <owl:equivalentClass rdf:resource="http://ws.nju.edu.cn/clinga/DaBa"/>
+  </owl:Class>
+</rdf:RDF>

@@ -1,0 +1,3 @@
+SELECT ?s (ckgp:P177 AS ?p) (MAX(?xo) AS ?o) WHERE {
+    ?s ckgp:P177 ?xo.
+} GROUP BY(?s)

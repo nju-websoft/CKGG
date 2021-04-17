@@ -1,0 +1,4 @@
+SELECT ?s ?p ?o WHERE {
+    ?s a ckgc:Q48.
+    ?s ?p ?o.
+}

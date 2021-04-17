@@ -1,0 +1,3 @@
+SELECT ?s (ckgp:P24 AS ?p) (SAMPLE(?xo) AS ?o) WHERE {
+    ?s ckgp:P24 ?xo.
+} GROUP BY(?s)

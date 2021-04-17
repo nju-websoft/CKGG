@@ -1,0 +1,16 @@
+SELECT * WHERE {
+SELECT ?s ?p ?o WHERE {
+    GRAPH ?graph {
+        ?n a rdf:Statement;
+            rdf:subject ?s;
+            rdf:predicate ?p;
+            rdf:object ?o;
+            prov:wasDerivedFrom ?g
+        .
+    }
+    VALUES ?p {
+        ckgp:P12 ckgp:P13 ckgp:P14 ckgp:P15 ckgp:P16
+    }
+    BIND(IF(?graph = <http://tempuri/src/cn_code_align_reified>, "", str(?g)) AS ?go)
+} ORDER BY ASC(?go)
+}

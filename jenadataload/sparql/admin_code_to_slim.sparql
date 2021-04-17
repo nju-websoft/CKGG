@@ -1,0 +1,7 @@
+SELECT ?s ?p ?o WHERE {
+    ?s a ckgc:Q5.
+    ?s ?p ?o.
+    VALUES ?p {
+        ckgp:P762
+    }
+}

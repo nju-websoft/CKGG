@@ -1,0 +1,23 @@
+SELECT ?s ?p ?o WHERE {
+    {
+        GRAPH <http://tempuri/src/canonical_coord> {
+            ?n a rdf:Statement;
+               rdf:subject ?s;
+               rdf:predicate ckgp:P23;
+               rdf:object ?oq
+            .
+        }
+        BIND(wgs84_pos:lon AS ?p)
+        BIND(bif:st_x(?oq) AS ?o)
+    } UNION {
+        GRAPH <http://tempuri/src/canonical_coord> {
+            ?n a rdf:Statement;
+               rdf:subject ?s;
+               rdf:predicate ckgp:P23;
+               rdf:object ?oq
+            .
+        }
+        BIND(wgs84_pos:lat AS ?p)
+        BIND(bif:st_y(?oq) AS ?o)
+    }
+}

@@ -1,0 +1,14 @@
+SELECT * WHERE {
+SELECT ?s ?p ?o ?g WHERE {
+    ?n a rdf:Statement;
+        rdf:subject ?s;
+        rdf:predicate ?p;
+        rdf:object ?o;
+        prov:wasDerivedFrom ?g
+    .
+    VALUES ?p {
+        ckgp:P12 ckgp:P13 ckgp:P14 ckgp:P15 ckgp:P16
+    }
+    FILTER (?s != ?o)
+} ORDER BY DESC(?p)
+}

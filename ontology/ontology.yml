@@ -1,0 +1,1670 @@
+# 单位制：角度 deg，长度 m，温度 C，时间 h，占比 百分比
+# * 星号表示需进一步讨论
+# Prefixs
+# xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+# skos:...
+# time:...
+# dbo:
+# 自定义数据类型
+# gkb:qualitative 表示定性的高低，可以分为：无，低，较低，中等，较高，高
+# 本体层属性(metadata):
+# skos:prefLabel,rdfs:label
+# skos:altLabel
+# skos:definition
+
+# Clinga 链接情况：
+# 未链接：电力设施，生活服务设施/**，文化艺术景观，民俗景观，森林公园，关口，山，小溪
+# 层级关系不一致：自然保护区是否应在生物保护区之下，大洲是否应该在行政区之下，clinga中对山的划分不合理
+# 其他情况：行政区部分直接采自clinga，暂未做链接
+
+- 地理实体%%0:
+  - _名称^^xsd:string<->skos:prefLabel%%0
+  - _别名^^xsd:string<->skos:altLabel%%0
+  - _定义^^xsd:string<->skos:definition%%0
+  - _Wikipedia链接^^xsd:anyURI
+  - 地点<->dbo:Place%%0:
+    - _排序分数^^xsd:double
+    # 在地球上特定位置的点，线，面
+    - _方位^^方位描述%%0 # 例如：在秦岭淮河线以南
+    - _面积^^xsd:double%%geonames
+    - _Geonames类别^^xsd:string%%geonames
+    - _层级属性%%0:
+      - _上级地点^^地点%%0:
+        - _上级行政区^^行政区%%0:
+          - _所属国家^^国家%%geonames
+          - _所属一级行政区^^一级行政区%%geonames
+          - _所属二级行政区^^二级行政区%%geonames
+          - _所属三级行政区^^三级行政区%%geonames
+          - _所属四级行政区^^四级行政区%%geonames
+        - _上级半球^^半球%%1
+      - _下级地点^^地点%%0
+    - _位置属性%%0:
+      - _经度^^xsd:double<->geo:long%%0
+      - _纬度^^xsd:double<->geo:lat%%0
+      - _海拔高度^^xsd:double<->geo:alt%%0
+      - _坐标^^geosparql:wktLiteral<->geosparql:hasGeometry%%0
+      - _范围^^geosparql:wktLiteral<->geosparql:hasGeometry%%0
+      - _海陆位置^^{沿海, 内陆}%%0
+      - _距海距离^^xsd:double%%0
+      - _大陆位置^^{大陆西岸, 大陆中部, 大陆东岸}%%0
+      - _沿河^^河流%%0
+      - _沿湖^^湖泊%%0
+      - _沿海^^海域%%0
+      - _影响洋流^^洋流%%0
+      - _位于河流位置%%13:
+        - _位于河流上游^^河流%%13
+        - _位于河流下游^^河流%%13
+        - _位于河流左岸^^河流%%13
+        - _位于河流右岸^^河流%%13
+        - _位于河口^^河流%%13
+    - _太阳辐射属性%%2:
+      - _太阳年辐射量^^xsd:double%%2 # 单位 kW,h/m^2
+      - _年日照时数^^xsd:double%%2
+      - _年平均光合有效辐射强度/年平均PAR强度^^xsd:double%%2
+    - _时间属性%%2:
+      - _自转线速度^^xsd:double%%2
+      - _地方时^^xsd:dateTime%%2
+      - _区时^^xsd:dateTime%%2
+      - _太阳高度角^^xsd:double%%2
+    - _时区昼夜属性%%2:
+      - _时区^^时区%%2
+      - _日出时间^^xsd:double%%2
+      - _日落时间^^xsd:double%%2
+      - _昼长^^xsd:double%%2
+      - _夜长^^xsd:double%%2
+      - _年昼长最大值^^xsd:double%%2
+      - _年昼长最小值^^xsd:double%%2
+      - _年昼长最大差值^^xsd:double%%2
+      - _正午太阳高度^^xsd:double%%2
+      - _年正午太阳高度最大值^^xsd:double%%2
+      - _年正午太阳高度最小值^^xsd:double%%2
+      - _年正午太阳高度最大差值^^xsd:double%%2
+      - _太阳直射日期^^xsd:date%%2
+      - _极昼期^^time:ProperInterval%%2
+      - _极夜期^^time:ProperInterval%%2
+      - _房屋朝向^^{南, 北}%%2
+      - _日影方向^^{南, 北}%%2
+      - _影长比值^^xsd:double%%2
+      - _太阳能热水器安装角度/太阳能板角度^^xsd:double%%2
+      - _自然带分布高度^^xsd:double%%2
+    - _气候属性%%0:
+      - _多年平均云量^^xsd:double%%2
+      - _气温日较差/_昼夜温差^^xsd:double%%4
+      - _年均温^^xsd:double%%4
+      - _日最低气温^^xsd:double%%4
+      - _日最高气温^^xsd:double%%4
+      - _气温年较差^^xsd:double%%4
+      - _月平均气温^^月平均气温属性%%4
+      - _最冷月均温^^xsd:double%%4
+      - _最热月均温^^xsd:double%%4
+      - _逆温现象^^xsd:boolean%%4
+      - _主导风向^^xsd:double%%13 # 使用double来表示风向角度，北风0度，东风90度，南风180度，西风270度
+      - _风频^^风频属性%%13
+      - _所处大气环流带%%4:
+        - _所处风带^^风带%%4
+        - _所处气压带^^气压带%%4
+      - _下垫面比热容^^gkb:qualitative%%4
+      - _所属温度带^^温度带%%4
+      - _气候类型^^气候类型%%4
+      - _积温/大于等于10摄氏度积温^^xsd:double%%23 # 中国气象背景数据集
+      - _无霜期^^time:ProperInterval%%12
+      - _年降水量/年雨量^^xsd:double%%4
+      - _月降水量^^月降水量属性%%0
+      - _降水变率^^xsd:double%%19 # 单位：百分比
+      - _年蒸发量^^xsd:double%%5 # https://www.osgeo.cn/map/mfb10
+      - _积雪深度^^xsd:double%%14
+      - _积雪面积^^xsd:double%%14 # NOTE: 只能采到某一个时间点的积雪深度和积雪面积
+      - _积雪日数^^time:ProperInterval%%14
+      - _雨热同期^^xsd:boolean%%12
+      - _屋顶形状^^{尖顶, 平顶}%%23
+    - _地质属性%%0:
+      - _岩石类型^^岩石%%23
+    - _自然环境属性%%0:
+      - _植被覆盖率/_森林覆盖率^^xsd:double%%15 # 之后再看看这两个是不是同一个东西
+      - _自然带^^自然带%%7
+      - _山地自然带谱属性%%7:
+          - _山地自然带发育程度/山地自然带分布丰富程度/山地自然带分布复杂程度^^gkb:qualitative%%7
+          - _山地自然带分布高度^^gkb:qualitative%%7
+      - _雪线高度^^xsd:double%%7
+      - _野生动物^^xsd:string%%15
+      - _野生植物^^xsd:string%%15 # NOTE: 是否要使用枚举类型（大概不用）
+      - _生物多样性^^gkb:qualitative%%15
+      - _环境自净能力^^gkb:qualitative%%16
+      - _下渗能力/_最大下渗率^^xsd:double%%19
+      - _地表径流量^^xsd:double%%19
+      - _冻土层厚度^^xsd:double%%19
+      - _地下水储量^^xsd:double%%22
+      - _地下水盐度^^xsd:double%%22
+    - _经济属性%%0:
+      - _人均生产总值/人均GDP^^xsd:double%%0
+      - _国内生产总值/GDP^^xsd:double%%0
+      - _地区生产总值^^xsd:double%%0
+      - _消费品价格/_物价/居民消费价格指数/CPI^^xsd:double%%15
+      - _消费水平^^xsd:double%%11 # NOTE: 可用数据源 https://www.ceicdata.com/zh-hans/china/resident-consumption-level/resident-consumption-level-urban
+      - _废弃物排放量^^废弃物排放量属性%%16
+      - _科技水平^^gkb:qualitative%%12
+      - _科技投入^^gkb:qualitative%%12
+      - _城镇化水平/_城市化程度/_城市化水平/_城市化率^^xsd:double%%18
+      - _工业化程度^^gkb:qualitative%%18
+      - _市场大小^^gkb:qualitative%%22
+      - _农业属性%%12:
+        - _粮食产量^^xsd:double%%12 # NOTE: 可用数据源 https://www.ceicdata.com/zh-hans/china/yield-of-farm-crops-grain
+        - _余粮量^^xsd:double%%21
+        - _农业地域类型^^农业地域类型%%12
+        - _机械化水平^^gkb:qualitative%%12
+        - _粮食商品率^^xsd:double%%12
+        - _农产品市场需求量^^gkb:qualitative%%12
+        - _集约化程度^^gkb:qualitative%%12
+        - _农作物生长期^^time:ProperInterval%%12
+        - _复种指数^^xsd:double%%12
+        - _单位面积产量/单产/收获率^^xsd:double%%12
+        - _单位面积产值^^xsd:double%%12
+        - _人均耕地面积^^xsd:double%%12
+        - _熟制^^{一年一熟, 两年三熟, 一年两熟, 一年三熟}%%12
+        - _土壤属性%%12:
+          - _土壤类型^^土壤%%12
+          - _土壤厚度^^xsd:double%%12
+          - _土壤透气性/土壤疏松程度^^gkb:qualitative%%19
+          - _土壤肥力^^gkb:qualitative%%12
+          - _土壤湿度/土壤含水量^^xsd:double%%12
+          - _土壤有机质含量^^xsd:double%%12
+          - _土壤矿物质含量^^xsd:double%%12
+          - _土壤可溶性盐分含量^^xsd:double%%17
+        - _农作物种植^^农作物种植属性%%12
+        - _灌溉属性%%12:
+          - _灌溉用水量^^xsd:double%%12
+          - _灌溉水源^^xsd:string%%12
+      - _发展程度%%11:
+        - _国家发达程度^^{发达国家, 发展中国家}%%11
+        - _人类发展指数^^xsd:double%%0 # NOTE: 参考 https://zh.wikipedia.org/wiki/%E4%BA%BA%E7%B1%BB%E5%8F%91%E5%B1%95%E6%8C%87%E6%95%B0
+      - _劳动属性%%0:
+        - _失业率^^xsd:double%%11
+        - _犯罪率^^xsd:double%%11
+        - _劳动力人数/劳动力数量^^xsd:nonNegativeInteger%%11
+        - _劳动力价格/工资水平^^xsd:double%%11
+        - _就业机会^^gkb:qualitative%%18
+        - _就业压力^^gkb:qualitative%%18
+        - _劳动生产率^^xsd:double%%11
+      - _产业属性%%11:
+        - _第一产业产值占比^^xsd:double%%11
+        - _第二产业产值占比^^xsd:double%%11
+        - _第三产业产值占比^^xsd:double%%11
+        - _第一产业劳动力占比^^xsd:double%%11
+        - _第二产业劳动力占比^^xsd:double%%11
+        - _第三产业劳动力占比^^xsd:double%%11 # NOTE: 是否要把产业加进来构成多元谓词
+      - _能源属性%%20: # 能耗单位：吨标准煤
+        - _人均能源量^^xsd:double%%20
+        - _人均能源消费量^^xsd:double%%20
+        - _单位产值能耗^^xsd:double%%20 # NOTE: 参考 https://data.worldbank.org.cn/indicator/EG.USE.PCAP.KG.OE
+    - _城市属性%%11:
+      - _城市形态^^{团块状, 组团式, 条带状/放射状}%%11
+      - _城市空间结构^^{同心圆模式, 扇形模式, 多核心模式}%%11
+      - _交通通达度/通达指数^^xsd:double%%11
+      - _铁路网密度^^xsd:double%%21
+      - _公路网密度^^xsd:double%%21 # NOTE: 路网密度是指区域内所有的铁路的总长度与区域总面积之比
+      - _房地产价格/_土地价格^^xsd:double%%21 # NOTE: 参考 https://www.ceicdata.com/zh-hans/china/land-price-city
+      - _城市土地利用率^^gkb:qualitative%%21
+      - _容积率^^xsd:double%%11
+      - _后备土地资源量^^xsd:double%%21
+      - _地租水平^^xsd:double%%11
+      - _城市等级^^gkb:qualitative%%11
+      - _城市职能^^gkb:qualitative%%11
+      - _城市服务范围^^gkb:qualitative%%11
+      - _城市人口数量^^xsd:nonNegativeInteger%%11
+      - _城市人口占比^^xsd:double%%11
+      - _农村人口数量^^xsd:nonNegativeInteger%%11
+      - _城市用地规模/_城市用地面积/_城市规模^^xsd:nonNegativeInteger%%21
+      - _城市数目^^gkb:qualitative%%21
+      - _工业基础^^gkb:qualitative%%13
+      - _农业基础^^gkb:qualitative%%13
+    - _政治属性%%0:
+      - _国家政策^^xsd:string%%0
+      - _国家补贴^^gkb:qualitative%%0 # FIXME: 想办法表示出来，拟定这部分的competency questions
+    - _贸易属性%%0:
+      - _进口商品^^xsd:string%%22
+      - _出口商品^^xsd:string%%22
+    - 自然地点%%0:
+      - 地形地貌%%0:
+        - 水体/水域<->clinga:ShuiYu%%3:
+          - 水系%%5:
+            - _水系干流^^河流%%5
+            - _上级水系^^水系%%5
+          - 河流<->clinga:HeLiu%%5:
+            - _补给水源^^水体%%5
+            - _补给水源类型^^{高山冰雪融水, 积雪融水, 大气降水, 地下水, 湖泊水}%%5
+            - _包含流域^^河流流域%%22
+            - _包含水文站^^水文站%%0
+            - _水系属性%%5:
+              - _源地^^地点%%5
+              - _注入地^^地点%%5
+              - _流程^^xsd:double%%5
+              - _流向^^xsd:string%%13
+              - _归属水系^^水系%%22
+              - _河道特征%%22:
+                - _河道宽度^^xsd:double%%20
+                - _河床高度^^xsd:double%%20
+                - _河床深度^^xsd:double%%22
+                - _河流弯曲系数^^xsd:double%%22
+              - _河网密度^^xsd:double%%21
+              - _流域面积^^xsd:double%%5
+              - _包含支流^^河流%%5
+              - _河流干流^^河流%%5
+              - _汇入水系^^水体%%5
+              - _河流落差^^xsd:double%%20
+            - _水文属性%%5: # 部分水文属性移到水文站下
+              - _流速^^gkb:qualitative%%5
+              - _水位^^gkb:qualitative%%5 # NOTE: 这里没有具体位置，因此只指定高低
+              - _年径流量^^xsd:double%%5
+              - _月径流量^^月径流量属性%%5
+              - _最大月径流量^^xsd:double%%5
+              - _最小月径流量^^xsd:double%%5
+              - _洪水期/汛期/丰水期^^time:ProperInterval%%5
+              - _枯水期^^time:ProperInterval%%5
+              - _断流^^xsd:boolean%%22
+              - _结冰期^^time:ProperInterval%%5
+              - _含沙量^^xsd:double%%5
+              - _输沙量^^xsd:double%%5
+            - _航运属性%%20:
+              - _通航时间^^time:ProperInterval%%20
+              - _航运价值^^gkb:qualitative%%20
+              - _通航里程^^xsd:double%%20
+            - _水能属性%%20:
+              - _水能资源量^^xsd:double%%20
+              - _水电开发利用量^^xsd:double%%20
+            - _洪水威胁大小^^gkb:qualitative%%20
+            - _调蓄能力^^gkb:qualitative%%20
+            - _水系发达程度^^gkb:qualitative%%20
+            - 运河<->clinga:YunHe%%22:
+              instances: [苏伊士运河%%22, 巴拿马运河%%22, 基尔运河/波罗的海-北海运河/北海-波罗的海运河%%22, 京杭运河%%23]
+            - 内流河%%17:
+              instances:
+                - 伏尔加河%%22
+                - 乌拉尔河%%22
+                - 锡尔河%%22
+                - 阿姆河%%22
+                - 额尔齐斯河%%22
+                - 塔里木河%%23
+            - 外流河%%17:
+              instances:
+                - 尼罗河%%7
+                - 密西西比河%%17
+                - 黄河%%22
+                - 恒河%%22
+                - 莱茵河%%22
+                - 顿河%%22
+                - 波河%%22
+                - 多瑙河%%22
+                - 刚果河%%22
+                - 巴拉圭河%%22
+                - 巴拉那河%%22
+                - 亚马孙河%%22
+                - 长江%%22
+                - 鸭绿江%%22
+                - 图们江%%22
+                - 湄公河%%22
+                - 红河%%22
+                - 湄南河%%22
+                - 伊洛瓦底江%%22
+                - 印度河%%22
+                - 湟水%%23
+                - 洮河%%23
+                - 渭河%%23
+                - 泾河%%23
+                - 洛河%%23
+                - 延河%%23
+                - 汾河%%23
+                - 南盘江%%23
+                - 北盘江%%23
+                - 红水河%%23
+                - 左江%%23
+                - 右江%%23
+                - 郁江%%23
+                - 黔江%%23
+                - 漓江%%23
+                - 桂江%%23
+                - 浔江%%23
+                - 西江%%23
+                - 东江%%23
+                - 北江%%23
+                - 金沙江%%23
+                - 怒江/萨尔温江%%23
+                - 澜沧江%%23
+                - 岷江%%23
+                - 雅砻江%%23
+                - 嘉陵江%%23
+                - 乌江%%23
+                - 沅江%%23
+                - 湘江%%23
+                - 汉江%%23
+                - 赣江%%23
+                - 黑龙江%%23
+                - 松花江%%23
+                - 海河%%23
+                - 珠江%%23
+                - 辽河%%23
+                - 钱塘江%%23
+                - 淮河%%23
+                - 额尔古纳河%%23
+          - 湖泊<->clinga:HuPo%%0:
+            - 咸水湖%%17:
+              instances:
+                - 里海%%22
+                - 咸海%%22
+                - 青海湖%%22
+            - 淡水湖%%17:
+              instances:
+                - 维多利亚湖%%22
+                - 休伦湖%%22
+                - 伊利湖%%22
+                - 贝加尔湖%%22
+                - 鄱阳湖%%22
+                - 洞庭湖%%22
+                - 太湖%%22
+          - 湖泊链%%geonames:
+            children:
+              - _包含湖泊^^湖泊%%22
+            instances:
+              - 五大湖%%12
+          - 水库%%5
+          - 海域<->clinga:HaiYang%%0:
+            - 浅海%%12
+            - 海湾<->clinga:HaiWan%%14:
+              instances: [哈德孙湾%%22, 孟加拉湾%%22, 墨西哥湾%%22, 波斯湾%%22, 几内亚湾%%22]
+            - 海峡%%22:
+              children:
+                - _连接的海洋^^海域%%22
+              instances:
+                - 马六甲海峡%%22
+                - 霍尔木兹海峡%%22
+                - 土耳其海峡%%22
+                - 直布罗陀海峡%%22
+                - 麦哲伦海峡%%22
+                - 英吉利海峡/多佛尔海峡%%22
+                - 卡特加特海峡%%22
+                - 曼德海峡%%22
+                - 台湾海峡%%22
+                - 朝鲜海峡%%22
+                - 德雷克海峡%%22
+            - 海角%%22:
+              instances: [好望角%%22]
+            - 海<->clinga:Hai%%22:
+              children:
+                - 内海%%22
+              instances: [黑海%%22, 渤海%%22, 日本海%%22, 加勒比海%%22, 别林斯高晋海%%22, 阿拉伯海%%22, 波罗的海%%22, 北海%%22, 地中海%%22, 红海%%22, 南海/南中国海%%22, 东海/东中国海%%22]
+            - 大洋/洋<->clinga:Yang%%22:
+              instances:
+                - 北冰洋%%22
+                - 太平洋%%22
+                - 大西洋%%22
+                - 印度洋%%22
+          - 泉<->clinga:Quan%%15:
+            - 温泉%%15
+          - 瀑布<->clinga:PuBu%%17
+          - 河流相关位置%%0:
+            - 河运起点%%11
+            - 河运终点%%11
+            - 河流交汇处%%11
+            - 河口%%11:
+              - 入海口%%17
+            - 污水排放点%%13
+            - 自来水取水点/水源地%%13
+        - 板块/六大板块%%6:
+          instances: [亚欧板块%%6, 太平洋板块%%6, 美洲板块%%6, 非洲板块%%6, 印度洋板块%%6, 南极洲板块%%6]
+        - 陆地%%0:
+          - 大陆%%0:
+            instances: [亚欧大陆%%19, 北美大陆%%19, 澳大利亚大陆%%22]
+          - 岛屿<->clinga:Dao%%http://ws.nju.edu.cn/clinga/:
+            instances: [本州岛%%22, 斯里兰卡岛%%22, 古巴岛%%22, 塔斯马尼亚岛%%22, 火地岛%%22, 马达加斯加岛%%22, 冰岛%%22]
+          - 礁<->clinga:Jiao%%http://ws.nju.edu.cn/clinga/:
+            - 珊瑚礁%%22:
+              instances:
+              - 大堡礁%%22
+          - 群岛<->clinga:QunDao%%22:
+            instances: [夏威夷群岛%%22, 马来群岛%%22, 不列颠群岛%%22]
+          - 半岛<->clinga:BanDao%%22:
+            instances: [朝鲜半岛%%22, 中南半岛%%22, 伊比利亚半岛%%22, 斯堪的纳维亚半岛%%22, 巴尔干半岛%%22, 亚平宁半岛%%22]
+        - 地形区%%0:
+          - 其他地形%%0:
+            - 外力作用地貌%%6:
+              - 喀斯特地貌%%6
+              - 风成地貌%%17: # NOTE: https://zh.wikipedia.org/wiki/%E9%A3%8E%E6%88%90%E5%9C%B0%E8%B2%8C
+                - 风蚀地貌%%https://zh.wikipedia.org/wiki/风成地貌:
+                  - 风蚀洼地%%https://zh.wikipedia.org/wiki/风成地貌
+                - 风积地貌%%https://zh.wikipedia.org/wiki/风成地貌:
+                  - 沙丘%%https://zh.wikipedia.org/wiki/风成地貌
+              - 河流侵蚀地貌%%6:
+                - 河谷/峡谷<->clinga:XiaGu%%6:
+                  children:
+                    - V型河谷/V型峡谷%%6
+                    - U型河谷/槽型河谷%%6
+                  instances:
+                    - 三峡%%23
+                    - 龙羊峡%%23
+                    - 李家峡%%23
+                    - 刘家峡%%23
+                    - 青铜峡%%23
+                    - 三门峡%%23
+                    - 小浪底%%23
+                    - 尼罗河谷地%%7
+                    - 黄河谷地%%12
+                    - 湟水谷地%%12
+                    - 雅鲁藏布江谷地%%12
+              - 河流堆积地貌%%6:
+                - 冲积扇%%6
+                - 平原:
+                  - 冲积平原/洪积-冲积平原/沉积平原%%6
+                  - 河漫滩平原%%6
+                  - 三角洲平原%%6:
+                    instances:
+                      - 珠江三角洲%%12
+                      - 长江三角洲%%23
+            - 内力作用地貌%%6:
+              - 褶皱山%%6
+              - 断块山%%6
+              - 火山<->clinga:HuoShan%%6
+            - 滩涂%%1:
+              - 海滩<->clinga:HaiTan%%17
+              - 河滩%%17
+              - 湖滩%%17
+            - 冰川%%17
+            - 裂谷%%22:
+              instances:
+              - 东非大裂谷%%22
+          - 海底基本地形%%22:
+            - 大陆架%%22
+            - 大陆坡%%22
+            - 海沟%%22
+            - 洋盆%%22
+            - 海岭%%22
+          - 陆地基本地形%%1:
+            - 高原<->clinga:GaoYuan%%1:
+              instances:
+                - 巴塔哥尼亚高原%%7
+                - 青藏高原%%12
+                - 云贵高原%%12
+                - 内蒙古高原%%23
+                - 黄土高原%%23
+                - 帕米尔高原%%22
+                - 阿拉善高原%%22
+                - 德干高原%%22
+                - 捷克高原%%22
+                - 巴伐利亚高原%%22
+                - 南非高原%%22
+                - 东非高原%%22
+                - 巴西高原%%22
+                - 圭亚那高原%%22
+                - 澳大利亚西部高原%%22
+            - 山地%%1:
+              children:
+                - 山脊%%1
+                - 山脊线/分水线%%1
+                - 山谷%%1
+                - 山谷线/集水线%%1
+                - 鞍部%%1
+                - 陡崖/峭壁/悬崖%%1
+                - 陡坡%%14
+                - 雪山%%23
+                - 山间盆地%%8
+                - 山麓%%12
+                - 褶皱山%%6
+                - 断块山%%6
+                - 火山
+                - 山峰<->clinga:ShanFeng%%1:
+                  instances: [文森山%%22]
+                - 山系%%0:
+                  instances: [科迪勒拉山系%%22]
+                - 山坡%%0:
+                  - 阳坡%%7
+                  - 阴坡%%7
+                  - 迎风坡%%7
+                  - 背风坡%%7
+                - 山脉<->clinga:ShanMai%%1:
+                  instances:
+                    - 昆仑山/昆仑山脉%%17
+                    - 阿尔金山%%17
+                    - 祁连山/祁连山脉%%17
+                    - 太行山%%22
+                    - 天山%%22
+                    - 喜马拉雅山%%22
+                    - 乌拉尔山%%22
+                    - 阿尔卑斯山脉%%22
+                    - 斯堪的纳维亚山脉%%22
+                    - 海岸山脉%%22
+                    - 内华达山脉%%22
+                    - 落基山脉%%22
+                    - 阿巴拉契亚山脉%%22
+                    - 安第斯山脉%%22
+                    - 横断山脉%%23
+                    - 大兴安岭%%23
+                    - 小兴安岭%%23
+                    - 太行山脉%%23
+                    - 长白山%%23
+                    - 巴颜喀拉山%%23
+                    - 巫山%%23
+                    - 雪峰山%%23
+                    - 唐古拉山%%23
+                    - 南岭%%23
+                    - 武夷山%%23
+                    - 台湾山脉%%23
+                    - 贺兰山%%23
+                    - 阴山山脉%%23
+                    - 冈底斯山%%23
+                    - 喀喇昆仑山%%23
+                    - 阿尔泰山%%23
+                    - 秦岭%%23
+              instances:
+                - 中德山地%%22
+                - 喜马拉雅山地%%22
+                - 大分水岭%%22
+                - 横断山区%%12
+                - 五台山区%%12
+            - 丘陵<->clinga:QiuLing%%1:
+              children:
+                - 台地%%17
+                - 缓丘%%8
+              instances:
+                - 山东丘陵%%12
+                - 哈萨克丘陵%%22
+                - 辽东丘陵%%23
+                - 东南丘陵%%23
+                - 江南丘陵%%23
+                - 两广丘陵%%23
+                - 浙闽丘陵%%23
+            - 盆地/洼地<->clinga:PenDi%%1:
+              instances:
+                - 墨累-达令盆地%%12
+                - 塔里木盆地%%22
+                - 刚果盆地%%22
+                - 澳大利亚盆地%%22
+                - 准噶尔盆地%%23
+                - 柴达木盆地%%23
+                - 四川盆地%%23
+                - 吐鲁番盆地%%23
+            - 平原<->clinga:PingYuan%%1:
+              instances:
+                - 松嫩平原%%12
+                - 三江平原%%12
+                - 东北平原/松辽平原%%12
+                - 华北平原%%12
+                - 长江中下游平原%%23
+                - 宁夏平原%%12
+                - 河套平原%%12
+                - 美国中央平原%%12
+                - 成都平原%%12
+                - 江汉平原%%12
+                - 洞庭湖平原%%12
+                - 鄱阳湖平原%%12
+                - 太湖平原%%12
+                - 豫北平原%%12
+                - 长江下游滨海沿江平原%%12
+                - 黄淮平原%%12
+                - 图兰平原%%22
+                - 西西伯利亚平原%%22
+                - 印度河平原%%22
+                - 恒河平原%%22
+                - 西欧平原%%22
+                - 东欧平原%%22
+                - 波德平原%%22
+                - 北美大平原%%22
+                - 密西西比河平原%%22
+                - 拉普拉塔平原%%22
+                - 亚马孙平原%%22
+                - 湄公河平原%%22
+      - 生态系统%%0:
+        - 森林<->clinga:SenLin%%0:
+          - 亚寒带针叶林%%19
+          - 混交林%%19
+          - 温带阔叶林%%19
+          - 亚热带阔叶林%%19
+          - 热带雨林%%19:
+            instances: [亚马孙雨林%%19]
+          - 原始森林/原生林%%21
+          - 人工林%%21:
+            - 防护林%%19
+        - 草原%%0:
+          instances:
+            - 潘帕斯草原/阿根廷潘帕斯草原%%12
+        - 荒漠%%0:
+          - 戈壁%%19
+          - 沙地%%19
+          - 沙漠<->clinga:ShaMo%%17:
+            instances:
+              - 撒哈拉沙漠%%22
+          - 高寒荒漠%%17
+        - 荒漠草原%%17
+        - 高山草甸%%17
+        - 高山草原%%17
+        - 沼泽%%14
+        - 冻土%%14
+        - 绿洲%%23
+        - 湿地<->clinga:ShiDi%%19:
+          instances: [三江平原湿地%%19]
+      - 自然地带%%0:
+        - 自然带%%7: # NOTE: 采自 https://baike.baidu.com/item/%E8%87%AA%E7%84%B6%E5%B8%A6 和 53 P105
+          - 低纬度自然带%%7:
+            instances: [热带雨林带%%7, 热带季雨林带%%7, 热带草原带/热带稀树草原带/萨瓦纳带%%7, 热带荒漠带%%7]
+          - 中纬度自然带%%7:
+            instances: [亚热带常绿硬叶林带%%7, 亚热带常绿阔叶林带%%7, 亚热带荒漠草原带%%7, 温带阔叶林带/温带落叶阔叶林带/夏绿阔叶林带%%7, 温带荒漠带%%7, 温带草原带%%7]
+          - 高纬度自然带%%7:
+            instances: [亚寒带针叶林带%%7, 寒带苔原带/苔原带%%7, 极地冰原带/冰原带%%7]
+          - 山地自然带/山地垂直自然带%%7:
+            instances: [高山草甸带%%7, 高寒荒漠带%%7, 积雪冰川带%%7]
+        - 温度带<->clinga:QiHouDai%%4:
+          - 温带%%4:
+            - 北温带%%4@
+            - 南温带%%4@
+          - 寒带%%4:
+            - 北寒带%%4@
+            - 南寒带%%4@
+          - 亚热带%%4:
+            - 北亚热带%%4@
+            - 南亚热带%%4@
+          - 热带%%4@
+        - 气候区%%19:
+          - 季风区%%19
+          - 非季风区%%19
+          - 干湿区%%19:
+            - 干旱区%%19
+            - 半干旱区%%19
+            - 湿润区%%19
+            - 半湿润区%%19
+          - 荒漠区%%19:
+            - 热带荒漠区%%19
+            - 温带荒漠区%%19
+        - 大气环流带%%4:
+          - 气压带%%4:
+            instances: [副极地低气压带%%4, 副热带高气压带%%4, 赤道低气压带%%4]
+          - 风带%%4:
+            instances: [极地东风带%%4, 盛行西风带%%4, 东北信风带%%4, 东南信风带%%4]
+        - 灾害带%%9:
+          - 地震带%%19
+        - 中国地势阶梯%%23:
+          instances:
+            - 第一级阶梯%%23
+            - 第二级阶梯%%23
+            - 第三级阶梯%%23
+        - 河流流域%%20:
+          children:
+            - 河流上游流域%%20
+            - 河流中游流域%%20
+            - 河流下游流域%%20
+            - 内流区/内流区域%%5
+            - 外流区/外流区域%%5
+          instances:
+            - 田纳西河流域%%20
+            - 塔里木河流域%%12
+            - 长江流域%%12
+            - 辽河流域%%21
+            - 松花江流域%%21
+            - 伏尔加河流域%%22
+            - 顿河流域%%22
+      - 洋流%%5:
+        - _洋流位置^^geosparql:wktLiteral%%0
+        - 寒流%%5
+        - 暖流%%5
+      - 天气系统%%4:
+        - 锋面%%4:
+          - 冷锋%%4
+          - 暖锋%%4
+          - 准静止锋%%4
+          - _雨区范围大小^^gkb:qualitative%%4
+          - _雨区位置^^{锋前, 锋后}%%4
+        - 气压系统%%4:
+          - 低压系统/气旋%%4
+          - 高压系统/反气旋%%4
+          - 高压中心%%4
+          - 低压中心%%4
+          - 高压脊%%4
+          - 低压槽%%4
+      - 板块运动边界%%6:
+        - _相邻板块^^板块%%6
+        - 消亡边界/板块碰撞区%%6
+        - 生长边界/板块张裂区%%6
+    - 人工地点%%0:
+      - 自然保护区<->clinga:ZiRanBaoHuQu%%23:
+        instances: [三江源自然保护区%%23]
+      - 中国自然区%%17:
+        instances: [东部季风区%%17, 西部干旱半干旱区%%17, 青藏高寒区%%17, 南方地区%%17, 北方地区%%17]
+        children:
+        - _所属自然区%%17
+        - _自然区自然特征%%17:
+          - _自然区位置描述^^xsd:string%%17
+          - _自然区占国土面积比例^^xsd:double%%17
+          - _自然区地形描述^^xsd:string%%17
+          - _自然区气候描述^^xsd:string%%17
+          - _自然区水文特征描述^^xsd:string%%17
+          - _自然区土壤描述^^xsd:string%%17
+          - _自然区植被描述^^xsd:string%%17
+        - _自然区人文特征%%17:
+          - _自然区农业活动描述^^xsd:string%%17
+          - _自然区交通状况描述^^xsd:string%%17
+          - _自然区经济描述^^xsd:string%%17
+          - _自然区文化描述^^xsd:string%%17
+      - 聚落%%8:
+        - _人口属性%%10:
+          - _人口总量^^xsd:long<->dbo:populationTotal,gn:population%%10
+          - _人口变化%%10:
+            - _出生率^^xsd:double%%10
+            - _死亡率^^xsd:double%%10
+            - _自然增长率^^xsd:double%%10
+            - _迁入率^^xsd:double%%10
+            - _迁出率^^xsd:double%%10
+          - _人口增长模式^^人口增长模式%%10
+          - _人口性别比^^xsd:double%%10
+          - _识字率^^xsd:double%%16
+          - _人均受教育年限/期望受教育年限^^xsd:double%%16
+          - _人口容量%%10:
+            - _环境人口容量^^xsd:double%%10
+            - _人口合理容量^^xsd:double%%10
+          - _人口年龄构成%%10:
+            - _人口年龄结构类型^^{年轻型, 成年型, 老年型}%%10
+            - _少年儿童比重^^xsd:double%%10
+            - _青年比重^^xsd:double%%10
+            - _老年比重^^xsd:double%%10
+          - _人口密度^^xsd:double%%10
+          - _人种^^{黑色人种, 黄色人种, 白色人种}%%22
+          - _宗教^^宗教%%22 # NOTE: 这里不使用string的原因是宗教可能和建筑关联（推理链 某地 -> 某宗教 -> 某建筑）
+          - _民族^^xsd:string%%0
+          - _语言^^xsd:string%%0
+          - _货币^^xsd:string%%0
+        - 贫民窟%%11
+        - 棚户区%%11
+        - 城中村%%21
+        - 窑洞%%19
+        - 中国区域%%https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%8C%BA%E5%9F%9F:
+          instances:
+            - 中国西北地区%%https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%8C%BA%E5%9F%9F
+            - 中国东北地区%%https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%8C%BA%E5%9F%9F
+            - 中国西南地区%%https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%8C%BA%E5%9F%9F
+            - 中国华北地区%%https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%8C%BA%E5%9F%9F
+            - 中国华中地区%%https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%8C%BA%E5%9F%9F
+            - 中国华东地区%%https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%8C%BA%E5%9F%9F
+            - 中国华南地区%%https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%8C%BA%E5%9F%9F
+        - 行政区<->clinga:XingZhengQuHua%%http://ws.nju.edu.cn/clinga/:
+          - _行政区代码^^xsd:string%%geonames # NOTE: 来自 geonames 和 中国行政区划，不唯一
+          - 国家<->clinga:GuoJia%%http://ws.nju.edu.cn/clinga/:
+            - _管辖海域面积^^xsd:double%%23
+            - _最北端^^地点%%23
+            - _最南端^^地点%%23
+            - _最西端^^地点%%23
+            - _最东端^^地点%%23
+            - _地形占比%%23:
+              - _山地占比^^xsd:double%%23
+              - _高原占比^^xsd:double%%23
+              - _盆地占比^^xsd:double%%23
+              - _平原占比^^xsd:double%%23
+              - _丘陵占比^^xsd:double%%23
+          - 一级行政区/省级行政区<->clinga:ShengJiXingZhengQu%%http://ws.nju.edu.cn/clinga/:
+            - _简称^^xsd:string%%0
+            - 省<->clinga:Sheng%%http://ws.nju.edu.cn/clinga/
+            - 自治区<->clinga:ZiZhiQu%%http://ws.nju.edu.cn/clinga/
+            - 直辖市<->clinga:ZhiXiaShi%%http://ws.nju.edu.cn/clinga/
+            - 特别行政区<->clinga:TeBieXingZhengQu%%http://ws.nju.edu.cn/clinga/
+          - 二级行政区/地级行政区<->clinga:DiJiXingZhengQu%%http://ws.nju.edu.cn/clinga/:
+            - 地区<->clinga:DiQu%%http://ws.nju.edu.cn/clinga/
+            - 地级市<->clinga:DiJiShi%%http://ws.nju.edu.cn/clinga/
+            - 盟<->clinga:Meng%%http://ws.nju.edu.cn/clinga/
+            - 自治州<->clinga:ZiZhiZhou%%http://ws.nju.edu.cn/clinga/
+          - 三级行政区/县级行政区<->clinga:XianJiXingZhengQu%%http://ws.nju.edu.cn/clinga/:
+            - 林区<->clinga:LinQu%%http://ws.nju.edu.cn/clinga/
+            - 旗<->clinga:Qi%%http://ws.nju.edu.cn/clinga/
+            - 市辖区<->clinga:ShiXiaQu%%http://ws.nju.edu.cn/clinga/
+            - 特区<->clinga:TeQu%%http://ws.nju.edu.cn/clinga/
+            - 县<->clinga:Xian%%http://ws.nju.edu.cn/clinga/
+            - 县级市<->clinga:XianJiShi%%http://ws.nju.edu.cn/clinga/
+            - 自治旗<->clinga:ZiZhiQi%%http://ws.nju.edu.cn/clinga/
+            - 自治县<->clinga:ZiZhiXian%%http://ws.nju.edu.cn/clinga/
+          - 四级行政区/乡级行政区<->clinga:XiangJiXingZhengQu%%http://ws.nju.edu.cn/clinga/:
+            - 街道<->clinga:JieDao%%http://ws.nju.edu.cn/clinga/
+            - 民族乡<->clinga:MinZuXiang%%http://ws.nju.edu.cn/clinga/
+            - 苏木<->clinga:SuMu%%http://ws.nju.edu.cn/clinga/
+            - 乡<->clinga:Xiang%%http://ws.nju.edu.cn/clinga/
+            - 镇<->clinga:Zhen%%http://ws.nju.edu.cn/clinga/
+          - 基层群众性自治区域<->clinga:JiCengQunZhongXingZiZhiQuYu%%http://ws.nju.edu.cn/clinga/: # NOTE: wiki中定义这个不是行政区，但和行政区放在一个页面上
+            - 社区<->clinga:SheQu%%http://ws.nju.edu.cn/clinga/
+            - 行政村<->clinga:XingZhengCun%%http://ws.nju.edu.cn/clinga/
+        - 中国经济地带%%17:
+          instances: [东部经济地带%%17, 中部经济地带%%17, 西部经济地带%%17]
+          children:
+          - _包含行政区^^一级行政区%%17
+          - _经济地带区域位置^^xsd:string%%17
+          - _经济地带自然特征^^xsd:string%%17
+          - _经济地带地位^^xsd:string%%17
+          - _经济地带优势条件^^xsd:string%%17
+          - _经济地带存在问题^^xsd:string%%17
+          - _经济地带发展方向^^xsd:string%%17
+          - _经济地带经济发展水平^^gkb:qualitative%%17
+          - _经济地带经济发展速度^^gkb:qualitative%%17
+        - 大洲<->clinga:DaZhou%%22:
+          instances:
+            - 欧洲%%22
+            - 亚洲%%22
+            - 南美洲%%22
+            - 北美洲%%22
+            - 大洋洲%%22
+            - 南极洲%%22
+            - 非洲%%22
+        - 城镇%%11:
+          - 卫星城%%11
+          - 郊区%%13
+          - 城市带%%22
+          - 城市%%https://zh.wikipedia.org/wiki/中华人民共和国城市建制: # NOTE: 采自 https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9F%8E%E5%B8%82%E5%BB%BA%E5%88%B6
+            - 超大城市%%https://zh.wikipedia.org/wiki/中华人民共和国城市建制
+            - 特大城市%%https://zh.wikipedia.org/wiki/中华人民共和国城市建制
+            - 大城市%%https://zh.wikipedia.org/wiki/中华人民共和国城市建制:
+              - I型大城市%%https://zh.wikipedia.org/wiki/中华人民共和国城市建制
+              - II型大城市%%https://zh.wikipedia.org/wiki/中华人民共和国城市建制
+            - 中等城市%%https://zh.wikipedia.org/wiki/中华人民共和国城市建制
+            - 小城市%%https://zh.wikipedia.org/wiki/中华人民共和国城市建制:
+              - I型小城市%%https://zh.wikipedia.org/wiki/中华人民共和国城市建制
+              - II型小城市%%https://zh.wikipedia.org/wiki/中华人民共和国城市建制
+      - 建筑%%0:
+        - 大型工程%%0:
+          instances: [三峡工程%%20]
+        - 科考站%%22:
+          instances: [和平站%%22]
+        - 气象站%%1
+        - 疗养院%%1
+        - 宿营地%%1
+        - 水文站%%0: # TODO: 从水文站数据构建本体
+          - _所属河流^^河流%%0
+          - _水文站水文属性%%0:
+            - _年平均水位^^xsd:double%%0
+            - _月水位^^月水位属性%%0
+            - _最大水位^^xsd:double%%0
+            - _最小水位^^xsd:double%%0
+        - 公共设施%%0:
+          - 交通设施%%0:
+            - 港口/码头<->clinga:GangKou%%1: # NOTE: 分类来自 https://zh.wikipedia.org/wiki/%E6%B8%AF%E5%8F%A3，分类尚未完全
+              - 海港%%23
+              - 河港%%0
+              - 河口港%%0
+              - 湖港%%0
+            - 公路<->clinga:GongLu%%1:
+              - 国道%%14
+              - 省道%%14
+              - 高速公路%%14
+              - 高速公路出入口%%14
+              - 城市道路<->clinga:JieQuLu%%14
+              - 其他公路%%14
+            - 铁路<->clinga:TieLu%%1:
+              - 铁路干线%%23: # TODO https://baike.baidu.com/item/%E4%B8%89%E6%A8%AA%E4%BA%94%E7%BA%B5
+                - 南北铁路干线%%23
+                - 东西铁路干线%%23
+              - 铁路支线%%23
+            - 交通枢纽%%14:
+              - 汽车站<->clinga:QiCheZhan%%14
+              - 航空港/机场<->clinga:JiChang%%14
+              - 火车站<->clinga:HuoCheZhan%%14:
+                - 客运站%%14
+                - 货运站%%14
+            - 隧道<->clinga:SuiDao%%14
+            - 桥梁<->clinga:Qiao%%14
+            - 索道%%15
+            - 船闸%%20
+          - 水利工程设施<->clinga:ShuiLiSheShi%%http://ws.nju.edu.cn/clinga/:
+            - 水库<->clinga:ShuiKu%%20
+            - 水库坝址%%1
+            - 大坝<->clinga:DaBa%%1:
+              instances: [葛洲坝水利枢纽%%23]
+          - 发电站<->clinga:FaDianZhan%%20:
+            - 火力发电厂/火电站%%20
+            - 坑口电站%%20
+            - 水电站%%20
+          - 防灾建筑%%9:
+            - 防洪堤坝%%9
+            - 防护林%%9
+            - 护坡工程%%9
+          - 其他公共设施%%15:
+            - 动物园%%15
+            - 博物馆<->clinga:BoWuGuan%%15
+        - 组织机构<->clinga:ZuZhiJiGou%%http://ws.nju.edu.cn/clinga/:
+          - 企业<->clinga:QiYe%%http://ws.nju.edu.cn/clinga/:
+            - 乡镇企业%%21
+          - 机关<->clinga:JiGuan%%http://ws.nju.edu.cn/clinga/
+        - 运输设施%%1:
+          - 引水路线%%1
+          - 输油气管道%%1
+        - 生产设施%%0:
+          - _原料^^xsd:string%%13
+          - _产品^^xsd:string%%13
+          - 挖沙场%%8
+          - 鱼塘%%12:
+            - 桑基鱼塘%%12
+            - 果基鱼塘%%12
+            - 蔗基鱼塘%%12
+          - 农场%%12:
+            - 玻璃温室%%12
+            - 塑料大棚%%12
+          - 矿场<->clinga:KuangChang%%http://ws.nju.edu.cn/clinga/:
+            - _储量^^xsd:double%%20
+            - _品质^^gkb:qualitative%%20
+            - _埋藏深度^^gkb:qualitative%%20 # NOTE: 没找到数据源，暂时定为定性类型
+            - 化石燃料矿<->clinga:HuaShiRanLiaoKuang%%http://ws.nju.edu.cn/clinga/:
+              - 煤矿/煤田%%13
+              - 油井/油田%%17
+              - 天然气井/天然气田%%17
+            - 金属矿<->clinga:JinShuKuang%%13: # FIXME: 矿场和矿物需要分开吗
+              - 黑色金属矿<->clinga:HeiSeJinShuKuang%%0:
+                - 铁矿%%13
+                - 铬矿%%0
+                - 锰矿%%0
+              - 有色金属矿<->clinga:YouSeJinShuKuang%%13:
+                - 锡矿%%0
+                - 铝土矿%%0
+                - 铜矿%%0
+              - 贵金属矿%%0:
+                - 金矿%%0
+            - 非金属矿<->clinga:FeiJinShuKuang%%0
+          - 工厂%%11: # TODO: 规范化分类模式
+            - _主导区位因素^^{原料, 市场, 能源, 劳动力成本, 知识和技术}%%13
+            - _大气污染程度^^gkb:qualitative%%11
+            - _水污染程度^^gkb:qualitative%%11
+            - _总污染程度^^gkb:qualitative%%13
+            - 原料导向型工厂%%13:
+              - 甜菜制糖厂%%13
+              - 甘蔗制糖厂%%13
+              - 水产品加工厂%%13
+              - 水果罐头厂%%13
+            - 市场导向型工厂%%13:
+              - 啤酒厂%%13
+              - 印刷厂%%13
+            - 动力导向型工厂%%13:
+              - 炼铝厂%%13
+            - 劳动力导向型工厂%%13:
+              - 普通服装厂%%13
+              - 电子装配厂%%13
+              - 制伞厂%%13
+              - 制鞋厂%%13
+            - 技术导向型工厂%%13:
+              - 集成电路厂%%13
+              - 卫星厂%%13
+              - 飞机厂%%13
+              - 精密仪表厂%%13
+            - 低污染型工厂%%13:
+              - 服装厂%%13
+              - 玩具厂%%13
+            - 轻度污染型工厂%%13:
+              - 机械厂%%13
+            - 重度污染型工厂%%13:
+              - 钢铁厂%%13
+              - 水泥厂%%13
+            - 炼钢厂%%13
+            - 面粉厂%%13
+            - 糕点厂%%13
+            - 糖果厂%%13
+            - 石油化工厂%%11
+            - 火力发电厂%%11
+            - 印染厂%%11
+            - 农药厂%%11
+            - 化肥厂%%11
+            - 家具制造厂%%11
+        - 宗教建筑%%0:
+          - 寺庙%%15:
+            instances:
+              - 吴哥窟%%15
+          - 道观%%15
+        - 古迹/古建筑<->clinga:GuJiJingGuan%%15:
+          instances:
+            - 泰姬陵%%15
+            - 古罗马斗兽场%%15
+            - 格林尼治天文台旧址%%15
+            - 凡尔赛宫%%15
+            - 凯旋门%%15
+            - 克里姆林宫%%15
+            - 埃菲尔铁塔%%15
+            - 自由女神像%%15
+            - 白宫%%15
+      - 旅游资源/名胜古迹/景观景点<->clinga:JingGuanJingDian%%15:
+        - _观赏位置^^xsd:string%%15
+        - _观赏时机^^xsd:string%%15
+        - _资源价值%%15:
+          - _美学价值^^xsd:string%%15
+          - _科学价值^^xsd:string%%15
+          - _历史文化价值^^xsd:string%%15
+          - _经济价值^^xsd:string%%15
+        - 自然旅游资源/自然景观<->clinga:ZiRanJingGuan%%15:
+          - 地文景观/地质地貌景观<->clinga:DiZhiDiMaoJingGuan%%15:
+            instances:
+            - 富士山%%15
+          - 气象景观/气候气象景观<->clinga:QiHouQiXiangJingGuan%%15
+          - 水域风光/水文景观<->clinga:ShuiWenJingGuan%%15
+          - 生物景观<->clinga:ShengWuJingGuan%%15
+        - 人文旅游资源/人文景观<->clinga:RenWenJingGuan%%15:
+          - 古迹
+          - 宗教建筑
+          - 现代建筑成就%%15
+          - 休闲求知景点%%15
+          - 购物景点%%15
+          - 其他人文旅游资源%%15:
+            instances:
+            - 水城威尼斯%%15
+            - 风车之国%%15
+        - 世界遗产%%15:
+          - 世界文化遗产%%15
+          - 世界自然遗产%%15
+          - 世界文化与自然遗产%%15
+      - 功能区%%0:
+        - 农业区/耕地%%12:
+          children:
+            - 旱地%%17
+            - 水田%%17
+            - 梯田%%17
+            - 商品粮基地%%12
+            - 棉生产基地%%12
+          instances:
+            - 中国西北灌溉农业区%%12
+        - 林地%%0
+        - 牧区/草地%%0
+        - 渔场%%5:
+          instances: [纽芬兰渔场%%5, 北海道渔场%%5, 北海渔场%%5, 秘鲁渔场%%5]
+        - 城市功能区%%11:
+          - 主要功能区%%11:
+            - 工业区%%1:
+              - _工业部门^^工业部门%%13
+              - 主要工业区%%13:
+                instances: [欧洲西部工业区%%13, 俄罗斯乌克兰工业区%%13, 北美工业区%%13, 中国-日本工业区%%13]
+              - 传统工业区%%13:
+                instances: [日本太平洋沿岸工业带%%13, 英国中部地区%%13, 美国东北部工业区%%13, 俄罗斯四大工业区%%13, 印度东北部传统工业区%%13]
+              - 新工业区%%13:
+                instances: [意大利东北部和中部工业区%%13, 美国“硅谷”%%13]
+              - 能源基地%%20:
+                instances: [鲁尔区%%20, 山西能源基地%%20]
+              - 工业基地%%23:
+                instances: [辽中南工业基地%%23, 京津唐工业基地%%23, 沪宁杭工业基地%%23, 珠江三角洲工业基地%%23]
+            - 商业区/中心商务区%%11
+            - 居民区/住宅区%%1:
+              - 高级住宅区%%11
+              - 低级住宅区%%11
+          - 其他功能区%%0:
+            - 文化区%%11
+    - 地图地点%%0:
+      - 半球%%1:
+        instances: [东半球%%1, 西半球%%1, 南半球%%1, 北半球%%1]
+      - 地区分界线%%0:
+        - _分界实体^^地点%%0
+        - _途径实体^^地点%%0
+        - 大洲分界线%%22
+        - 海洋分界线%%22
+        - 其他地区分界线%%0:
+          instances: [昆仑山-阿尔金山-祁连山%%17, 秦岭-淮河%%17, 黑河-腾冲线%%23]
+      - 晨昏线%%2:
+        - _相切纬线纬度^^xsd:double%%2
+        - 晨线%%2
+        - 昏线%%2
+      - 日界线%%2:
+        - 自然日界线%%2
+        - 人为日界线%%2:
+          instances: [国际日期变更线%%2]
+      - 等值线%%1:
+        - _值%%0
+        - 等降水量线%%4:
+          instances: [400mm年等降水量线%%17]
+        - 等温线%%4
+        - 等压线%%4
+        - 等高线%%1
+      - 经纬线%%1:
+        - _长度^^xsd:double%%1
+        - 经线%%1:
+          instances:
+          - 本初子午线%%1
+        - 纬线%%1:
+          - 赤道%%1:
+            instances:
+              - 赤道%%1
+          - 极圈%%1:
+            instances:
+              - 北极圈%%1
+              - 南极圈%%1
+      - 极点%%1:
+        instances: [南极点%%1, 北极点%%1]
+      - 城市中心%%11
+  - 天体系统%%2:
+    - _天体系统包含天体系统^^天体系统%%2
+    - _天体系统所属天体系统^^天体系统%%2
+    - 总星系%%2@
+    - 星系%%2:
+      - 银河系%%2@
+      - 河外星系%%2
+    - 恒星系%%2:
+      instances:
+        - 太阳系%%2
+    - 行星系%%2:
+      instances:
+        - 地月系%%2
+  - 天体<->clinga:XingTi%%2:
+    - _天体所属天体系统^^天体系统%%2
+    - _天体直径^^xsd:double%%2
+    - _天体表面温度^^xsd:double%%2
+    - _绕转天体^^天体%%2
+    - _自转属性%%2:
+      - _自转周期^^xsd:double%%2
+      - _自转角速度^^xsd:double%%2
+    - _公转属性%%2:
+      - _公转周期^^xsd:double%%2
+      - _半长轴^^xsd:double%%2
+      - _近日点时间^^xsd:date%%2
+      - _远日点时间^^xsd:date%%2
+    - _黄赤交角^^xsd:double%%2
+    - 恒星<->clinga:HengXing%%2:
+      instances: [太阳%%2]
+    - 行星<->clinga:XingXing%%2:
+      - 太阳系内行星%%2:
+        - 类地行星%%2:
+          instances: [水星%%2, 金星%%2, 地球%%2, 火星%%2]
+        - 巨行星%%2:
+          instances: [木星%%2, 土星%%2]
+        - 远日行星%%2:
+          instances: [天王星%%2, 海王星%%2]
+      - 太阳系外行星%%2
+    - 卫星<->clinga:WeiXing%%2:
+      instances: [月球%%2]
+    - 小行星%%2
+    - 小行星带%%2:
+      instances: [主小行星带%%2]
+  - 圈层结构%%2:
+    - 太阳圈层%%2
+    - 地球圈层%%2:
+      - 地球内部圈层%%2:
+        - _组成物质^^xsd:string%%2
+        - 地壳%%2:
+          - 洋壳%%22
+        - 地幔%%2:
+          - 上地幔%%2
+          - 下地幔%%2
+        - 地核%%2:
+          - 外核%%2
+          - 内核%%2
+      - 地球外部圈层%%2:
+        - 岩石圈%%2
+        - 水圈%%2
+        - 大气圈%%2
+        - 生物圈%%2
+    - 不连续面%%2:
+      - 莫霍面%%2
+      - 古登堡面%%2
+  - 太阳活动%%2:
+    children:
+      - _太阳活动位置^^太阳圈层%%2
+    instances:
+      - 黑子%%2
+      - 耀斑%%2
+      - 日珥%%2
+      - 太阳风%%2
+  - 日期%%2:
+    - _日期值^^xsd:date%%2
+    - _太阳直射点纬度^^xsd:double%%2
+    - 节气%%0
+  - 地理信息技术%%3:
+    children:
+      - _应用^^xsd:string%%3
+      - _别称^^xsd:string%%3
+      - _技术装备^^xsd:string%%3
+    instances:
+      - 地理信息系统/GIS%%3
+      - 遥感/RS%%3
+      - 全球定位系统/GPS%%3
+  - 季风%%4:
+    - _冬季风向^^xsd:string%%4
+    - _夏季风向^^xsd:string%%4
+    - _冬季源地^^地点%%4
+    - _夏季源地^^地点%%4
+    - _冬季成因^^xsd:string%%4
+    - _夏季成因^^xsd:string%%4
+    - _冬季性质^^xsd:string%%4
+    - _夏季性质^^xsd:string%%4
+    - _相关气候类型^^气候类型%%4
+  - 气候类型<->clinga:QiHouLeiXing%%4: # NOTE: 采自 https://baike.baidu.com/item/%E6%B0%94%E5%80%99%E7%B1%BB%E5%9E%8B#3_1
+    - _气候类型成因^^xsd:string%%4
+    - _气候特征^^xsd:string%%4
+    - _气候类型区域^^geosparql:wktLiteral%%0
+    - 季风气候%%4:
+      instances: [温带季风气候%%4, 亚热带季风气候%%4, 热带季风气候%%4]
+    - 非季风气候%%4:
+      instances: [热带雨林气候%%4, 热带草原气候%%4, 热带沙漠气候%%4, 地中海气候%%4, 亚热带湿润气候%%4, 亚热带沙漠气候%%4, 温带海洋气候%%4, 温带大陆性湿润气候%%4, 温带大陆性气候%%4, 亚寒带大陆性气候%%4, 极地冰原气候%%4, 极地苔原气候%%4, 高原山地气候%%4]
+    - 热带气候%%4:
+      instances: [热带雨林气候%%4, 热带草原气候%%4, 热带沙漠气候%%4, 热带季风气候%%4]
+    - 亚热带气候%%4:
+      instances: [地中海气候%%4, 亚热带季风气候%%4, 亚热带湿润气候%%4, 亚热带沙漠气候%%4]
+    - 温带气候%%4:
+      instances: [温带海洋气候%%4, 温带季风气候%%4, 温带大陆性湿润气候%%4, 温带大陆性气候%%4]
+    - 亚寒带气候%%4:
+      instances: [亚寒带大陆性气候%%4]
+    - 寒带气候%%4:
+      instances: [极地冰原气候%%4, 极地苔原气候%%4]
+    - 其他气候%%4:
+      instances: [高原山地气候%%4]
+  - 岩石%%6:
+    - _岩石成因^^xsd:string%%6
+    - 岩浆岩%%6:
+      - 侵入岩%%6:
+        instances:
+          - 花岗岩%%6
+      - 喷出岩%%6:
+        instances:
+          - 玄武岩%%6
+    - 沉积岩%%6:
+      instances:
+        - 砾岩%%6
+        - 砂岩%%6
+        - 页岩%%6
+        - 石灰岩%%6
+    - 变质岩%%6:
+      instances:
+        - 大理岩%%6
+        - 板岩%%6
+        - 石英岩%%6
+        - 片麻岩%%6
+  - 力的作用%%6:
+    - _分布地区^^地点%%0
+    - 内力作用%%6:
+      - 地壳运动%%6
+      - 岩浆活动%%6
+      - 变质作用%%6
+    - 外力作用%%6:
+      - 风化作用/风力作用%%6
+      - 侵蚀作用%%6:
+        - 风力侵蚀%%6
+        - 流水侵蚀%%6:
+          - 侵蚀%%6
+          - 溶蚀%%6
+        - 冰川侵蚀%%6
+      - 沉积作用/堆积作用%%6:
+        - 冰川沉积%%6
+        - 流水沉积%%6
+        - 风力沉积%%6
+      - 流水作用%%6
+  - 地质构造%%6:
+    - 褶皱%%6:
+      - 背斜%%6
+      - 向斜%%6
+    - 断层%%6
+  - 自然灾害%%8:
+    - 天文灾害%%8:
+      - 太阳风暴%%8
+    - 水文灾害%%8:
+      - 洪水灾害%%8:
+        - 暴雨洪水%%9
+        - 融雪洪水%%9
+        - 冰凌洪水%%9
+      - 风暴潮灾害/风暴潮%%8:
+        - 台风风暴潮%%9
+        - 温带风暴潮%%9
+    - 气象气候灾害%%8:
+      - 洪涝%%8:
+        - 春旱%%23
+        - 夏涝%%23
+        - 梅雨%%23
+        - 伏旱%%23
+      - 凌汛%%20
+      - 断流%%20
+      - 干旱%%8
+      - 暴雨%%8
+      - 龙卷风%%9
+      - 台风%%9
+      - 风暴潮灾害%%8
+      - 寒潮/冻害/低温冷害%%8
+      - 大雾%%8
+      - 沙尘暴%%8
+    - 地质灾害%%8:
+      - 地震%%8
+      - 火山灾害%%8
+      - 崩塌%%20
+      - 滑坡%%8
+      - 泥石流%%8
+    - 海洋灾害%%8:
+      - 海啸%%8
+      - 赤潮%%8
+    - 生物灾害%%8:
+      - 病害%%8
+      - 虫害%%8
+      - 鼠害%%8
+  - 人口增长模式%%10:
+    children:
+      - _出生率描述^^xsd:string%%10
+      - _死亡率描述^^xsd:string%%10
+      - _自然增长率描述^^xsd:string%%10
+    instances:
+      - 原始型%%10
+      - 传统型%%10
+      - 现代型%%10
+  - 城市化阶段%%11:
+    children:
+      - _表现^^xsd:string%%11
+      - _城市化阶段成因^^xsd:string%%11
+    instances:
+      - 城市化%%11
+      - 郊区城市化%%11
+      - 逆城市化%%11
+      - 再城市化%%11
+  - 产业类型%%0: # 参考 http://www.stats.gov.cn/tjsj/tjbz/201301/t20130114_8675.html#:~:text=%E4%BA%8C%E3%80%81%E4%B8%89%E6%AC%A1%E4%BA%A7%E4%B8%9A%E7%9A%84%E8%8C%83%E5%9B%B4,%E4%BA%A7%E4%B8%9A%E4%BB%A5%E5%A4%96%E7%9A%84%E5%85%B6%E4%BB%96%E8%A1%8C%E4%B8%9A%E3%80%82
+    - 第一产业%%11:
+      - 农业%%12:
+        - 立体农业/垂直农业%%12
+        - 河谷农业%%12
+        - 绿洲农业%%12
+        - 灌溉农业%%12
+        - 坝子农业%%12
+        - 基塘农业%%12
+        - 无土栽培农业%%12
+        - 水稻种植业%%22
+        - 特色农业%%21:
+          - 出口创汇农业%%21
+          - 长绒棉生产基地%%21
+          - 热带经济作物生产基地%%21
+          - 花卉种植业%%21
+          - 热带种植园农业%%22
+      - 林业%%12
+      - 牧业%%12:
+        - 畜牧业%%17:
+          - 荒漠畜牧业%%22
+        - 海水养殖业%%12
+      - 渔业%%12
+    - 第二产业%%11: # TODO: 完善
+      - 采矿业%%22
+      - 冶金业%%22
+      - 军事工业%%22
+    - 第三产业%%11:
+      - 旅游业%%15
+      - 边境贸易业%%21
+    - 劳动密集型产业%%18:
+      - 生活消费品加工工业%%21
+    - 资金密集型产业%%18
+    - 技术密集型产业/高新技术产业%%18:
+      - 电子信息产业%%21
+  - 商品类型%%0:
+    - 原料%%0:
+      - 牧草%%12
+      - 饲料%%12
+    - 产品%%0:
+      - 农牧产品%%12:
+        instances:
+          - 牛奶%%12
+          - 牛肉%%12
+          - 林木%%21
+          - 人参%%21
+          - 鹿%%21
+          - 林蛙%%21
+          - 食用菌%%21
+          - 中草药材%%21
+          - 山野菜/野菜%%21
+          - 天然橡胶%%22
+          - 油棕%%22
+          - 蕉麻%%22
+          - 羊毛%%22
+          - 茶叶%%12
+          - 桑蚕%%12
+          - 淡水鱼%%12
+          - 长绒棉%%12
+          - 瓜果%%12
+          - 小麦%%12
+          - 肉%%12
+          - 奶%%12
+          - 毛%%12
+          - 皮%%12
+  - 土壤%%12:
+    # TODO: 参考（https://baike.baidu.com/item/%E5%9C%9F%E5%A3%A4%E7%B1%BB%E5%9E%8B）
+    children:
+      - _适宜作物^^xsd:string%%12
+      - _是否沙质^^xsd:boolean%%12
+      - _酸碱性^^{酸性, 碱性, 中性}%%12
+    instances:
+      - 黄土%%19
+      - 黑土%%12
+      - 黑钙土%%21
+      - 紫色土%%12
+      - 水稻土%%12
+      - 红壤%%23
+      - 砖红壤%%23
+      - 棕壤%%23
+      - 钙质土%%23
+  - 植被类型%%2:
+    - 林木%%2:
+      - 兴安落叶松%%21
+      - 红松%%21
+      - 白桦%%21
+      - 杉木%%23
+      - 马尾松%%23
+    - 农作物%%12:
+      - _生产需水量^^gkb:qualitative%%12
+      - 粮食作物%%12:
+        - 细粮作物%%21:
+          - 小麦%%12:
+            - 春小麦%%17
+            - 冬小麦%%17
+          - 水稻%%12
+        - 杂粮作物%%21:
+          - 玉米%%12
+          - 谷子%%21
+          - 高粱%%21
+          - 马铃薯%%23
+          - 青稞%%23
+      - 经济作物%%12:
+        - 其他经济作物%%0:
+          - 棉花%%12
+          - 亚麻%%21
+          - 桑树%%12
+          - 橡胶树%%12
+          - 蔬菜%%12
+          - 茶树%%12
+          - 花卉%%12
+          - 蕉麻%%12
+          - 剑麻%%23
+          - 椰子%%23
+        - 油料作物%%12:
+          - 花生%%12
+          - 油菜%%12
+          - 大豆%%12
+          - 胡麻%%12
+          - 芝麻%%12
+          - 油茶%%23
+          - 油棕%%12
+        - 糖料作物%%12:
+          - 甜菜%%12
+          - 甘蔗%%12
+        - 水果作物%%12:
+          - 苹果%%12
+          - 梨%%12
+          - 柑橘%%12
+          - 沙棘%%12
+          - 枸杞%%12
+          - 香蕉%%23
+          - 荔枝%%23
+          - 龙眼%%23
+          - 菠萝%%23
+    - 其他植物%%0:
+      - 牧草植物%%12
+      - 芨芨草%%23
+      - 骆驼刺%%23
+  - 禽畜%%0:
+    - 乳牛%%12
+    - 牦牛%%23
+    - 藏绵羊%%23
+    - 藏山羊%%23
+    - 淡水鱼%%12
+    - 三河牛%%21
+    - 三河马%%21
+    - 细毛羊%%22
+    - 羔皮羊%%22
+  - 农业地域类型%%12:
+    - 以种植业为主的农业地域类型%%12:
+      - 季风水田农业%%12
+      - 商品谷物农业%%12
+    - 以畜牧业为主的农业地域类型%%12:
+      - 乳畜业%%12
+      - 大牧场放牧业%%12
+    - 混合农业%%12
+  - 交通运输方式%%14:
+    children:
+      - _运量^^gkb:qualitative%%14
+      - _运价^^gkb:qualitative%%14
+      - _运速^^gkb:qualitative%%14
+      - _灵活性^^gkb:qualitative%%14
+      - _连续性^^gkb:qualitative%%14
+      - _选择依据^^xsd:string%%14
+    instances:
+      - 水路运输%%14
+      - 铁路运输%%14
+      - 公路运输%%14
+      - 航空运输%%14
+      - 管道运输%%14
+  - 环境问题%%16:
+    - _原因%%16:
+      - _自然原因^^xsd:string%%16
+      - _人为原因^^xsd:string%%16
+    - 资源短缺%%16:
+      - 水资源短缺%%16:
+        - 水质性缺水%%21
+      - 土地资源短缺%%16
+      - 矿产资源短缺%%16
+      - 能源短缺%%16
+    - 生态破坏%%16:
+      - _治理措施^^xsd:string%%19
+      - 水土流失%%16
+      - 海水倒灌%%20
+      - 黑土退化%%21
+      - 草场退化%%21
+      - 土地荒漠化%%19:
+        - 沙漠化/土地沙化%%19
+        - 石质荒漠化%%19
+        - 次生盐渍化%%19
+      - 生物多样性减少%%16
+      - 土地盐碱化%%16
+      - 森林破坏%%19:
+        - 乱砍滥伐%%21
+      - 湿地破坏%%19
+    - 环境污染%%16:
+      - 臭氧层破坏%%16
+      - 酸雨%%16
+      - 大气污染%%16
+      - 水污染%%16
+      - 土壤污染%%16
+      - 固体废弃物污染%%16
+      - 噪声污染%%16
+      - 放射性污染%%16
+      - 海洋污染%%16
+      - 光污染%%16
+      - 辐射污染%%16
+  - 人地关系思想%%16:
+    children:
+      - _历史时期^^xsd:string%%16
+    instances:
+      - 崇拜自然%%16
+      - 改造自然%%16
+      - 征服自然%%16
+      - 人地协调%%16
+  - 可持续发展原则%%16:
+    instances:
+      - 公平性原则%%16
+      - 持续性原则%%16
+      - 共同性原则%%16
+  - 循环经济%%16:
+    - 清洁生产%%16
+    - 生态农业%%16
+  - 资源跨区域调配路线%%18:
+      - _起点^^地点%%18
+      - _终点^^地点%%18
+      - _途径点^^地点%%18
+      - _输送资源^^xsd:string%%18
+      - 西电东送工程%%18:
+        instances:
+          - 西电东送工程北线%%18
+          - 西电东送工程中线%%18
+          - 西电东送工程南线%%18
+      - 运煤通道%%18:
+        instances:
+          - 东西运煤通道%%18
+          - 南北运煤通道%%18
+          - 沿海运煤通道%%18
+      - 跨流域调水工程/引水工程%%18:
+        - 南水北调工程%%18:
+          children:
+            - _水量^^gkb:qualitative%%18
+            - _水质^^gkb:qualitative%%18
+          instances:
+            - 南水北调工程东线%%18
+            - 南水北调工程中线%%18
+            - 南水北调工程西线%%18
+      - 西气东输工程%%18@
+  - 产业转移%%18:
+    - _产业转移原因^^xsd:string%%18
+    - 区域产业转移/国内产业转移%%18
+    - 国际产业转移/跨国产业转移%%18
+  - 能源%%20:
+    - 可再生能源%%20:
+      instances:
+        - 太阳能%%23
+        - 地热能%%23
+        - 水能%%20
+        - 风能%%20
+        - 生物能%%20
+    - 非可再生能源%%20:
+      instances:
+        - 煤%%20
+        - 石油%%20
+        - 天然气%%20
+  - 经济贸易类型%%0: # TODO: 不知道类型名应该叫什么
+    - 外向型经济/出口导向型经济%%21
+    - 内向型经济%%21
+  - 民族%%23:
+    - _人口^^xsd:int%%0
+    - 多数民族%%23:
+      instances:
+        - 汉族%%23
+    - 少数民族%%23
+  - 废弃物/三废%%0:
+    - 废气/空气污染物%%https://baike.baidu.com/item/空气污染物: # NOTE: 采自 https://baike.baidu.com/item/%E7%A9%BA%E6%B0%94%E6%B1%A1%E6%9F%93%E7%89%A9
+      - 氮氧化物/一氧化氮/二氧化氮%%https://baike.baidu.com/item/空气污染物
+      - 硫氧化物/二氧化硫/SO2/三氧化硫/SO3%%https://baike.baidu.com/item/空气污染物
+      - 颗粒物/可吸入颗粒物/PM2.5/PM10%%https://baike.baidu.com/item/空气污染物
+      - 一氧化碳%%https://baike.baidu.com/item/空气污染物
+      - 臭氧%%https://baike.baidu.com/item/空气污染物
+      - 碳氢化合物/甲烷/乙烯%%https://baike.baidu.com/item/空气污染物
+    - 废水/水污染物%%https://zh.wikipedia.org/wiki/水污染: # NOTE: 采自 https://zh.wikipedia.org/wiki/%E6%B0%B4%E6%B1%A1%E6%9F%93#%E6%B1%A1%E6%9F%93%E7%89%A9
+      - 病原体%%https://zh.wikipedia.org/wiki/水污染
+      - 有机污染物%%https://zh.wikipedia.org/wiki/水污染
+      - 无机污染物%%https://zh.wikipedia.org/wiki/水污染
+    - 固体废弃物%%0
+  - 宗教%%0:
+    - _宗教建筑^^宗教建筑%%0
+  - 工业部门%%13:
+    # TODO: 14类轻工业分类表 http://www.cnlic.org.cn/zhongqingliangonggao/202003/P020200316040929.doc
+    - 轻工业%%13:
+      - 建材工业%%21
+      - 森林工业%%21
+    # TODO: https://baike.baidu.com/item/%E9%87%8D%E5%B7%A5%E4%B8%9A
+    - 重工业%%13:
+      - 炼焦业%%20
+    - 高科技工业%%18
+  - 时区%%2:
+    - _GMT偏移量^^xsd:double%%geonames # 以小时记
+  - 地图%%1:
+    - _比例尺^^xsd:double%%1 # 1:xxx
+    - 等值线图%%1:
+      - _等值距^^xsd:double%%1
+- 多元谓词辅助属性%%0:
+  - 月降水量属性%%0:
+    - _月降水量属性月份^^xsd:int%%0
+    - _月降水量值^^xsd:double%%0
+  - 月平均气温属性%%0:
+    - _月平均气温属性月份^^xsd:int%%0
+    - _月平均气温值^^xsd:double%%0
+  - 月径流量属性%%0:
+    - _月径流量属性月份^^xsd:int%%0
+    - _径流量^^xsd:double%%0
+  - 月水位属性%%0:
+    - _月水位属性月份^^xsd:int%%0
+    - _月水位值^^xsd:double%%0
+  - 方位描述%%0:
+    - _地点^^地点%%0
+    - _方位描述^^xsd:string%%0 # TODO: 讨论是使用方位角描述还是字符串描述
+  - 风频属性%%0:
+    - _风向^^{东,南,西,北,东南,西北,西南,东北}%%0
+    - _频率^^xsd:double%%0 # 百分比
+  - 废弃物排放量属性%%0:
+    - _排放物^^废弃物%%0
+    - _排放量^^xsd:double%%0 # TODO: 是否使用定性类型
+  - 农作物种植属性%%0:
+    - _农作物^^农作物%%0
+    - _种植面积^^xsd:double%%0
+    - _种植面积占比^^xsd:double%%0

@@ -1,0 +1,10 @@
+SELECT DISTINCT ?s WHERE {
+    {
+        SELECT ?s (COUNT(?o) AS ?os) {
+            GRAPH <http://tempuri/src/new_align> {
+                ?s owl:sameAs ?o.
+            }
+        } GROUP BY ?s
+    }
+    FILTER(?os >= ?lb && ?os <= ?ub)
+}

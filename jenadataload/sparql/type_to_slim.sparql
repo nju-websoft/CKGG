@@ -1,0 +1,18 @@
+SELECT DISTINCT ?s ?p ?o WHERE {
+    {
+        ?s a ckgc:Q5.
+        GRAPH <http://tempuri/src/geonames_type> {
+            ?n a rdf:Statement;
+                rdf:subject ?s;
+                rdf:predicate rdf:type;
+                rdf:object ?o
+            .
+        }
+    }
+    UNION
+    {
+        ?s a ckgc:Q5.
+        BIND(ckgc:Q5 AS ?o)
+    }
+    BIND(rdf:type AS ?p)
+}

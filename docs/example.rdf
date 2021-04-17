@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:ckgp="http://w3id.org/ckgg/1.0/ontology/properties/" >
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/10030066">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/101544">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/10284060">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/10408093">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/10456737">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/10497836">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/10789083">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/10991002">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/11291785">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/11339002">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/11436859">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/1222301">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/1236697">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/1299415">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/1389134">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/1403477">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/1447776">
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/1599280">
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/1737870">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/1841276">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/1910649">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2097793">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2107711">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2197017">
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2214611">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2319440">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2341284">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2345609">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2365985">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2392863">
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2423919">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2560276">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2589875">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2609412">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2638002">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2726500">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2771420">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2794159">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2834351">
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2879066">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2887863">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/2914198">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/3005187">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/305260">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/3195937">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/3209164">
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/3235238">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/3294100">
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/3351363">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/3353304">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/336585">
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/3374966">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/3423425">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/3504140">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/3564083">
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/3586934">
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/360290">
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/3764188">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/4510518">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/4970577">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/5023014">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/563141">
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/596157">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/6186196">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/6407234">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/6500185">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/724467">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q5" />
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q805" />
+    <rdfs:label xml:lang="zh-cn">南京市</rdfs:label>
+    <rdfs:label xml:lang="zh-sg">南京市</rdfs:label>
+    <rdfs:label xml:lang="zh-my">南京市</rdfs:label>
+    <rdfs:label xml:lang="en">Nanjing Shi</rdfs:label>
+    <rdfs:label xml:lang="zh-hk">南京</rdfs:label>
+    <rdfs:label xml:lang="zh-tw">南京市</rdfs:label>
+    <rdfs:label>南京市</rdfs:label>
+    <rdfs:label xml:lang="zh">南京市</rdfs:label>
+    <rdfs:label xml:lang="zh">南京</rdfs:label>
+    <rdfs:label xml:lang="zh-hans">南京市</rdfs:label>
+    <rdfs:label xml:lang="en">Nanjing</rdfs:label>
+    <rdfs:label xml:lang="zh-hant">南京市</rdfs:label>
+    <owl:sameAs rdf:resource="http://sws.geonames.org/1799960" />
+    <owl:sameAs rdf:resource="http://sws.geonames.org/1799962" />
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q28794795" />
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q16666" />
+    <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#double">31.9657</geo:lat>
+    <ckgp:P177 rdf:datatype="http://www.w3.org/2001/XMLSchema#long">7165292</ckgp:P177>
+    <ckgp:P22 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</ckgp:P22>
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/7431525" />
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/336585" />
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/2834351" />
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/1201744" />
+    <ckgp:P12 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/2834351" />
+    <ckgp:P13 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/336585" />
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/1447776" />
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/3294100" />
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/1599280" />
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/946466" />
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/3209164" />
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/360290" />
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/10522477" />
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/854890" />
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/2392863" />
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/3586934" />
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/563141" />
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/2197017" />
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/3564083" />
+    <ckgp:P26 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">220080.0</ckgp:P26>
+    <ckgp:P39 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1304.65</ckgp:P39>
+    <ckgp:P48 rdf:resource="http://w3id.org/ckgg/1.0/instances/auxiliary/I276" />
+    <ckgp:P6 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://zh.wikipedia.org/wiki/南京市</ckgp:P6>
+    <ckgp:P6 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Nanjing</ckgp:P6>
+    <ckgp:P7 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4783</ckgp:P7>
+    <ckgp:P71 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16.0081</ckgp:P71>
+    <ckgp:P75 rdf:nodeID="b239200884" />
+    <ckgp:P75 rdf:nodeID="b233512731" />
+    <ckgp:P75 rdf:nodeID="b232905482" />
+    <ckgp:P75 rdf:nodeID="b239407830" />
+    <ckgp:P75 rdf:nodeID="b239407829" />
+    <ckgp:P75 rdf:nodeID="b239407838" />
+    <ckgp:P75 rdf:nodeID="b239407839" />
+    <ckgp:P75 rdf:nodeID="b239407836" />
+    <ckgp:P75 rdf:nodeID="b239407837" />
+    <ckgp:P75 rdf:nodeID="b239407834" />
+    <ckgp:P75 rdf:nodeID="b239407833" />
+    <ckgp:P75 rdf:nodeID="b239120217" />
+    <ckgp:P762>3201</ckgp:P762>
+    <ckgp:P762>320100000000</ckgp:P762>
+    <ckgp:P8>P.PPLA</ckgp:P8>
+    <ckgp:P8>A.ADM2</ckgp:P8>
+    <ckgp:P86 rdf:resource="http://w3id.org/ckgg/1.0/instances/auxiliary/I449" />
+    <ckgp:P89 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.30435</ckgp:P89>
+    <ckgp:P90 rdf:nodeID="b93031233" />
+    <ckgp:P90 rdf:nodeID="b93099783" />
+    <ckgp:P90 rdf:nodeID="b93099787" />
+    <ckgp:P90 rdf:nodeID="b93099784" />
+    <ckgp:P90 rdf:nodeID="b93099785" />
+    <ckgp:P90 rdf:nodeID="b93099791" />
+    <ckgp:P90 rdf:nodeID="b93099788" />
+    <ckgp:P90 rdf:nodeID="b93099789" />
+    <ckgp:P90 rdf:nodeID="b93099794" />
+    <ckgp:P90 rdf:nodeID="b93099795" />
+    <ckgp:P90 rdf:nodeID="b93099792" />
+    <ckgp:P90 rdf:nodeID="b93099796" />
+    <geo:lon rdf:datatype="http://www.w3.org/2001/XMLSchema#double">118.873</geo:lon>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/7301553">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/7350920">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/7726970">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/773620">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/7752959">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/7789443">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/7813045">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/854890">
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/860241">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/8720014">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/8772164">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/9193844">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/920483">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/9802103">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/9861035">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/987036">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/9887469">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/9890753">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/9911319">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/9916960">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/9942418">
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/1201744">
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/7431525">
+    <ckgp:P18 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/946466">
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ckgg/1.0/instances/location/10522477">
+    <ckgp:P10 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+    <ckgp:P14 rdf:resource="http://w3id.org/ckgg/1.0/instances/location/724467" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b93031233">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1629" />
+    <ckgp:P1630 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ckgp:P1630>
+    <ckgp:P1631 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0631102</ckgp:P1631>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b93099783">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1629" />
+    <ckgp:P1630 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ckgp:P1630>
+    <ckgp:P1631 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0631475</ckgp:P1631>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b93099784">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1629" />
+    <ckgp:P1630 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ckgp:P1630>
+    <ckgp:P1631 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0867325</ckgp:P1631>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b93099785">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1629" />
+    <ckgp:P1630 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</ckgp:P1630>
+    <ckgp:P1631 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0788288</ckgp:P1631>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b93099787">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1629" />
+    <ckgp:P1630 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ckgp:P1630>
+    <ckgp:P1631 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.202746</ckgp:P1631>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b93099788">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1629" />
+    <ckgp:P1630 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</ckgp:P1630>
+    <ckgp:P1631 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.121815</ckgp:P1631>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b93099789">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1629" />
+    <ckgp:P1630 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ckgp:P1630>
+    <ckgp:P1631 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.133285</ckgp:P1631>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b93099791">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1629" />
+    <ckgp:P1630 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ckgp:P1630>
+    <ckgp:P1631 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0824903</ckgp:P1631>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b93099792">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1629" />
+    <ckgp:P1630 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ckgp:P1630>
+    <ckgp:P1631 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0165927</ckgp:P1631>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b93099794">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1629" />
+    <ckgp:P1630 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ckgp:P1630>
+    <ckgp:P1631 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0975036</ckgp:P1631>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b93099795">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1629" />
+    <ckgp:P1630 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ckgp:P1630>
+    <ckgp:P1631 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1947</ckgp:P1631>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b93099796">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1629" />
+    <ckgp:P1630 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ckgp:P1630>
+    <ckgp:P1631 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.163397</ckgp:P1631>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b232905482">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1632" />
+    <ckgp:P1633 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ckgp:P1633>
+    <ckgp:P1634 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.7319</ckgp:P1634>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b233512731">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1632" />
+    <ckgp:P1633 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ckgp:P1633>
+    <ckgp:P1634 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">28.0527</ckgp:P1634>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b239120217">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1632" />
+    <ckgp:P1633 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ckgp:P1633>
+    <ckgp:P1634 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.3068</ckgp:P1634>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b239200884">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1632" />
+    <ckgp:P1633 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ckgp:P1633>
+    <ckgp:P1634 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.6822</ckgp:P1634>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b239407829">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1632" />
+    <ckgp:P1633 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ckgp:P1633>
+    <ckgp:P1634 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">23.3087</ckgp:P1634>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b239407830">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1632" />
+    <ckgp:P1633 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</ckgp:P1633>
+    <ckgp:P1634 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.73624</ckgp:P1634>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b239407833">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1632" />
+    <ckgp:P1633 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ckgp:P1633>
+    <ckgp:P1634 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.22931</ckgp:P1634>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b239407834">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1632" />
+    <ckgp:P1633 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</ckgp:P1633>
+    <ckgp:P1634 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.6867</ckgp:P1634>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b239407836">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1632" />
+    <ckgp:P1633 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ckgp:P1633>
+    <ckgp:P1634 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">17.7056</ckgp:P1634>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b239407837">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1632" />
+    <ckgp:P1633 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ckgp:P1633>
+    <ckgp:P1634 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">28.2104</ckgp:P1634>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b239407838">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1632" />
+    <ckgp:P1633 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ckgp:P1633>
+    <ckgp:P1634 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.1538</ckgp:P1634>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b239407839">
+    <rdf:type rdf:resource="http://w3id.org/ckgg/1.0/ontology/classes/Q1632" />
+    <ckgp:P1633 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ckgp:P1633>
+    <ckgp:P1634 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.2935</ckgp:P1634>
+  </rdf:Description>
+</rdf:RDF>

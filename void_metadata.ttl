@@ -1,0 +1,45 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wv: <http://vocab.org/waiver/terms/norms> .        
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix : <#> .
+
+<http://w3id.org/ckgg/1.0/> a void:Dataset ;
+    foaf:homepage <http://w3id.org/ckgg/1.0/>;
+    dcterms:title "CKGG";
+    dcterms:description "CKGG: A Chinese Knowledge Graph for High-School Geography and Beyond"@en;
+    dcterms:description "中文高中地理知识图谱"@zh-cn;
+    dcterms:contributor <http://ws.nju.edu.cn/>;
+    dcterms:publisher <http://ws.nju.edu.cn/>;
+    
+    dcterms:source <http://www.wikidata.org/>;
+    dcterms:source <http://www.geonames.org/>;
+    # more sources?
+
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>; # using cc-by-sa 4.0 now
+    dcterms:modified "2021-04-20"^^xsd:date;
+    dcterms:subject <http://dbpedia.org/resource/Geography>;
+    dcterms:subject <http://dbpedia.org/resource/Location>;
+
+    # TURTLE for reified statement version of temperature and precipation, RDF_XML for ontology, NT for others
+    void:feature <http://www.w3.org/ns/formats/N-Triples>;
+    void:feature <http://www.w3.org/ns/formats/Turtle>;
+
+    foaf:page <https://doi.org/10.5281/zenodo.4668711>;
+    foaf:page <https://doi.org/10.5281/zenodo.4678089>;
+
+    void:exampleResource <https://w3id.org/ckgg/1.0/instances/location/414710>;
+    void:uriRegexPattern "^http://w3id\\.org/ckgg/1\\.0/(instances|ontology)/";
+    void:vocabulary <http://www.w3.org/2003/01/geo/wgs84_pos>;
+    void:triples 1497124276;
+    void:entities 12192151;
+    .
+<http://ws.nju.edu.cn/> a foaf:Organization;
+    rdfs:label "Websoft Research Group"@en
+    foaf:homepage <http://ws.nju.edu.cn/>;
+    .
